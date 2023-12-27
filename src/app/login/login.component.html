@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-6">
+      <div class="text-center">
+        <img src="assets/Logo-1.png" alt="Your Logo" class="mt-4">
+        <h3 class="Title mt-3 mb-2">مرحبا بعودتك</h3>
+        <p class="Title mt-3 mb-2">سجل الدخول للوصول الي حسابك</p>
+      </div>
+      <form name="signin" class="form"  [formGroup]="loginFrm" (ngSubmit)="submit()" >
+				<div class="input-control">
+					<label for="email" class="input-label" hidden>البريد الالكتروني</label>
+					<input type="email" formControlName="username" name="email" id="email" class="input-field" placeholder="البريدالالكتروني">
+				</div>
+				<div class="input-control">
+					<label for="password" class="input-label" hidden>كلمه المرور</label>
+					<input type="password" formControlName="password" name="password" id="password" class="input-field" placeholder="كلمه المرور">
+				</div>
+				<div class="input-control">
+					<a href="#" class="text text-links">نسيت كلمه المرور</a>
+					<button type="submit" name="submit" class="input-submit
+        mt-2"   [disabled]="loginFrm.invalid">
+            التالي
+        </button>
+				</div>
+			</form>
+			<div class="striped">
+				<span class="striped-line"></span>
+				<span class="striped-text">أو </span>
+				<span class="striped-line"></span>
+			</div>
+      <div class="container">
+      <div class="method">
+        <div class="method-control google">
+          <a href="#" class="method-action">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" height="25" width="40" viewBox="0 0 488 512">!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.<path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg> -->
+            <i class="fab fa-google fa-3x"></i>
+
+            <span>المتابعه باستخدام جوجل</span>
+          </a>
+        </div>
+        <div class="method-control facebook">
+          <a href="#" class="method-action fac_action">
+            <svg xmlns="http://www.w3.org/2000/svg" height="25" width="40" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+
+            <span class="facebook-icon">المتابعة باستخدام فيسبوك</span>
+          </a>
+        </div>
+        <div class="method-control phone">
+          <a href="#" class="method-action">
+            <span>المتابعه باستخدام رقم الهاتف</span>
+          </a>
+        </div>
+      </div>
+
+
+</div>   <div class="register-links">
+        <p class="text text-links">ليس لدي حساب؟</p>
+        <p class="text text-links"><a href="#" class="text text-links">التسجيل</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
